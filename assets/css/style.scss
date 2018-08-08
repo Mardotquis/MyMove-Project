@@ -1,0 +1,105 @@
+@mixin upper {
+  text-transform: uppercase;
+}
+$white: #fff;
+$purple: #536dfe;
+$shadow: 0px 2px 4px 0px;
+
+.hero__container {
+  background-image: url("../img/newbgheroimg.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  height: 419px;
+  text-align: center;
+  .hero__nav {
+    display: flex;
+    height: 90px;
+    width: 1440px;
+    // justify-content: space-between;
+    align-items: center;
+  }
+  .test {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+  .hero__nav--icon {
+    height: 49px;
+    width: 49px;
+    margin-left: 38px;
+    // margin: 0 40px;
+  }
+  .hero__nav__items {
+    display: flex;
+    // justify-content: flex-end;
+    justify-content: space-evenly; //could be wrong
+    width: 667px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    // margin-right: 89px;
+    @include upper();
+    li {
+      color: $white;
+      font-size: 12px;
+    }
+  }
+  .hero__nav__hamburger {
+    margin: 0 40px;
+    // align-self: flex-end;
+  }
+  .hero__text__container {
+    // text-shadow: 0px 2px 4px;
+    .hero__text--yellow {
+      font-size: 18px;
+      color: #fdd835;
+      @include upper();
+      letter-spacing: 3px;
+    }
+    .hero__text--big {
+      font-size: 54px;
+
+      color: $white;
+    }
+    .hero__text--small {
+      font-size: 16px;
+      color: $white;
+    }
+  }
+}
+main {
+  .blog__nav__items {
+    letter-spacing: 0.75px;
+    position: absolute;
+    top: 461px;
+    width: 1143px;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 158px;
+    margin-right: 135px;
+
+    @include upper();
+    list-style: none;
+    li {
+      margin-top: 12px;
+      font-size: 13px;
+      // text-shadow: $shadow;
+    }
+    .blog__nav__active {
+      border-bottom: #536dfe;
+    }
+    .blog__nav__btn--purple {
+      // display: block;
+      width: 178px;
+      // margin-left: 108px;
+      background: $purple;
+      color: $white;
+      text-align: center;
+    }
+  }
+}

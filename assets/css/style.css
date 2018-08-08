@@ -1,0 +1,113 @@
+.hero__container {
+  background-image: url("../img/newbgheroimg.jpg");
+  background-repeat: no-repeat;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  height: 419px;
+  text-align: center;
+}
+
+.hero__container .hero__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  width: 1440px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__container .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__container .hero__nav--icon {
+  height: 49px;
+  width: 49px;
+  margin-left: 38px;
+}
+
+.hero__container .hero__nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 667px;
+  height: 24px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.hero__container .hero__nav__items li {
+  color: #fff;
+  font-size: 12px;
+}
+
+.hero__container .hero__nav__hamburger {
+  margin: 0 40px;
+}
+
+.hero__container .hero__text__container .hero__text--yellow {
+  font-size: 18px;
+  color: #fdd835;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero__container .hero__text__container .hero__text--big {
+  font-size: 54px;
+  color: #fff;
+}
+
+.hero__container .hero__text__container .hero__text--small {
+  font-size: 16px;
+  color: #fff;
+}
+
+main .blog__nav__items {
+  letter-spacing: 0.75px;
+  position: absolute;
+  top: 461px;
+  width: 1143px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 158px;
+  margin-right: 135px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+main .blog__nav__items li {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+main .blog__nav__items .blog__nav__active {
+  border-bottom: #536dfe;
+}
+
+main .blog__nav__items .blog__nav__btn--purple {
+  width: 178px;
+  background: #536dfe;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
