@@ -581,12 +581,16 @@ body {
   border-bottom: 3px solid #fff;
 }
 
-.breadcrums {
+.article__top {
+  margin-left: 338px;
+}
+
+.article__top .article__breadcrums {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
-  margin-right: 338px;
   height: 24px;
   text-transform: uppercase;
   /* moving Resources > M: */
@@ -596,23 +600,129 @@ body {
   line-height: 24px;
 }
 
-.breadcrums li {
+.article__top .article__breadcrums li {
   list-style-type: none;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
-.breadcrums li:nth-of-type(5) {
+.article__top .article__breadcrums li:nth-of-type(5) {
   color: #424242;
 }
 
-.article__header {
+.article__top .article__header {
   font-family: RVMontserrat-Bold;
   font-size: 42px;
   color: #424242;
   letter-spacing: 0;
-  margin-right: 338px;
   margin-top: 18px;
   line-height: 48px;
+}
+
+.article__top .blog__credits {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  height: 41px;
+  width: 156px;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article__top .blog__credits .blog__credits__text {
+  line-height: 0.5;
+  margin-left: 15px;
+}
+
+.article__top .blog__credits .blog__credits__text .blog__credits__author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #424242;
+  letter-spacing: 0.86px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.article__top .blog__credits .blog__credits__text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #757575;
+  letter-spacing: 0.86px;
+  line-height: 0;
+}
+
+.article__img {
+  margin-top: 50px;
+  margin-left: 236px;
+  width: 968px;
+  height: 402px;
+  text-align: center;
+}
+
+.article__main__wrapper {
+  margin-top: 50px;
+  max-width: 931px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article__main__wrapper .article__toc .article__toc__header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #424242;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.article__main__wrapper .article__toc .article__toc__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 931px;
+  display: flex;
+}
+
+.article__main__wrapper .article__toc .article__toc__lists ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.article__main__wrapper .article__toc .article__toc__lists li {
+  /* Friesenfort: */
+  font-family: Tahoma-Bold;
+  font-size: 16px;
+  color: #3949ab;
+  letter-spacing: 0;
+  line-height: 24px;
+  list-style-type: none;
 }
 
 .footer {
