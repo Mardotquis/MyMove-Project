@@ -1,5 +1,5 @@
 @import url("reset.css");
-
+@import "../partials/fonts";
 //IMPORT CSS RESET
 @mixin upper {
   text-transform: uppercase;
@@ -16,7 +16,7 @@ $purple: #536dfe;
 $darkpurple: #3949ab;
 $gold: #fdd835;
 $shadow: 0 0 45px 0 rgba(0, 0, 0, 0.15);
-$rvfont: "RVMontserrat", sans-serif;
+$rvfont: "Montserrat", sans-serif;
 //VARIABLES
 
 body {
@@ -112,10 +112,10 @@ body {
   height: 48px;
   display: flex;
   justify-content: space-between;
-  margin-left: 158px;
-  margin-right: 135px;
-  line-height: 48px;
+  margin: 42px 135px 40px 135px;
+
   align-items: center;
+  line-height: 48px;
 
   @include upper();
   list-style: none;
@@ -423,10 +423,14 @@ body {
     }
   }
   .morearticles {
-    position: relative;
+    // position: relative;
+    width: 1171px;
+    height: 48px;
     display: flex;
     margin-top: 76px;
     margin-bottom: 94px;
+    justify-content: space-between;
+    align-items: center;
     .morearticles__break {
       // position: absolute;
       // top: 0;
@@ -434,11 +438,118 @@ body {
       height: 1px;
       background-color: #d8d8d8;
     }
+    .morearticles__link {
+      font-family: $rvfont;
+      font-weight: 600;
+      height: 48px;
+      width: 249px;
+      background-color: #536dfe;
+      font-size: 14px;
+      @include upper();
+      letter-spacing: 0.24px;
+      line-height: 14px;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
   }
 }
 //MAIN BLOGS ENDS
+// ARTICLES PAGE BEGINS
+.moving__hero__container {
+  background: $darkpurple;
+
+  // background-size: cover;
+
+  font-family: $rvfont;
+
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  .hero__nav {
+    display: flex;
+    height: 90px;
+    width: 1440px;
+    // justify-content: space-between;
+    align-items: center;
+  }
+  .test {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+  .hero__nav--icon {
+    height: 49px;
+    width: 49px;
+    margin-left: 38px;
+    // margin: 0 40px;
+  }
+  .hero__nav__items {
+    padding: 0;
+    display: flex;
+    font-family: $rvfont;
+    justify-content: space-evenly; //could be wrong
+    width: 667px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    letter-spacing: 0.86px;
+
+    // margin-right: 89px;
+    @include upper();
+    li {
+      color: $white;
+      font-size: 12px;
+      a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+          border-bottom: 3px solid $white; //EXTRA CREDIT
+        }
+      }
+    }
+  }
+}
+.breadcrums {
+  display: flex;
+  margin-top: 60px;
+  margin-right: 338px;
+  height: 24px;
+  // width: 619px;
+  @include upper();
+  // flex-wrap: wrap;
+  /* moving Resources > M: */
+
+  font-size: 12px;
+  color: #303f9f;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  li {
+    list-style-type: none;
+    padding-right: 5px;
+    &:nth-of-type(5) {
+      color: #424242;
+    }
+  }
+}
+.article__header {
+  font-family: RVMontserrat-Bold;
+  font-size: 42px;
+  color: #424242;
+  letter-spacing: 0;
+  margin-right: 338px;
+  margin-top: 18px;
+  line-height: 48px;
+}
+// ARTICLES PAGE ENDS
 //FOOTER STARTS
 .footer {
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
   height: 366px;
   background-color: $darkpurple;
   li {
@@ -448,6 +559,56 @@ body {
     color: $white;
 
     text-decoration: none;
+  }
+  .footer__nav--left__items {
+    margin-top: 84px;
+    margin-left: 144px;
+    margin-right: auto;
+    padding: 0;
+    height: 165px;
+    width: 146px;
+    font-family: $rvfont;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 1.14px;
+    line-height: 33px;
+  }
+  .footer__nav--right__logos {
+    // font-size: 5em;
+    margin-right: 142px;
+    width: 148.46px;
+    display: flex;
+    align-items: center;
+    li {
+      margin-bottom: 16px;
+    }
+  }
+  .footer__nav--bottom {
+    height: 24px;
+    width: 1440px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+    /* Privacy Policy | Ter: */
+    font-family: RVMontserrat-Light;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 24px;
+    li {
+      border-right: 1px solid #eeeeee;
+      padding: 0 15px;
+
+      &:nth-of-type(4) {
+        border: none;
+      }
+    }
   }
 }
 //FOOTER ENDS
