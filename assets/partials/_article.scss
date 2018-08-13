@@ -20,6 +20,7 @@
     width: 100%;
     align-items: center;
   }
+
   .hero__nav--icon {
     height: 49px;
     width: 49px;
@@ -204,7 +205,7 @@
       width: 670px;
       height: 276px;
       .thirdsec__table__head {
-        border: 1px solid black;
+        border: 1px solid #ccc;
         background-color: #eeeeee;
         th {
           height: 56px;
@@ -214,10 +215,10 @@
       }
       .thirdsec__table__body {
         text-align: center;
-        border: 1px solid black;
+        border: 1px solid #ccc;
         tr,
         td {
-          border: 1px solid black;
+          border: 1px solid #ccc;
         }
       }
     }
