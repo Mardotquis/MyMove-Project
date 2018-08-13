@@ -1,0 +1,16 @@
+@mixin upper {
+  text-transform: uppercase;
+}
+@mixin testing {
+  * {
+    border: 1px rgb(255, 0, 234) solid;
+    background: blue;
+  }
+}
+@mixin underlineHover {
+  a {
+    &:hover {
+      border-bottom: 3px solid white;
+    }
+  }
+}

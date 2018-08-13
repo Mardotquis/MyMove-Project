@@ -1,0 +1,68 @@
+//FOOTER STARTS
+.footer {
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
+  height: 366px;
+  background-color: $darkpurple;
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: $white;
+
+    text-decoration: none;
+  }
+  .footer__nav--left__items {
+    margin-top: 84px;
+    margin-left: 144px;
+    margin-right: auto;
+    padding: 0;
+    height: 165px;
+    width: 146px;
+    font-family: $rvfont;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 1.14px;
+    line-height: 33px;
+    @include underlineHover();
+  }
+  .footer__nav--right__logos {
+    // font-size: 5em;
+    margin-right: 142px;
+    width: 148.46px;
+    display: flex;
+    align-items: center;
+    li {
+      margin-bottom: 16px;
+    }
+  }
+  .footer__nav--bottom {
+    height: 24px;
+    width: 1440px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+    /* Privacy Policy | Ter: */
+    font-family: RVMontserrat-Light;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 24px;
+    li {
+      border-right: 1px solid #eeeeee;
+      padding: 0 15px;
+      @include underlineHover();
+      &:nth-of-type(4) {
+        border: none;
+      }
+    }
+  }
+}
+//FOOTER ENDS
