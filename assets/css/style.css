@@ -242,6 +242,12 @@ body {
           flex-direction: column;
 }
 
+.main__blog .main__blog--text a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main__blog .main__blog--text .main__blog--divider {
   background: #eeeeee;
   height: 1px;
@@ -331,7 +337,7 @@ body {
   text-transform: uppercase;
 }
 
-.main__blog .main__blog--text .main__blog__credits .main__blog__credits__text p {
+.main__blog .main__blog--text .main__blog__credits .main__blog__credits__text p, .main__blog .main__blog--text .main__blog__credits .main__blog__credits__text time {
   font-family: Georgia;
   font-size: 12px;
   color: #757575;
@@ -412,7 +418,7 @@ body {
   text-transform: uppercase;
 }
 
-.articles .sub .sub__bottomcontent .blog__credits .blog__credits__text p {
+.articles .sub .sub__bottomcontent .blog__credits .blog__credits__text p, .articles .sub .sub__bottomcontent .blog__credits .blog__credits__text time {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #757575;
@@ -465,7 +471,7 @@ body {
   text-transform: uppercase;
 }
 
-.articles .sub .blog__special p {
+.articles .sub .blog__special p, .articles .sub .blog__special time {
   text-align: center;
   margin: 0 auto;
 }
@@ -489,9 +495,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.articles .sub .blog--small__logo p {
+.articles .sub .blog--small__logo p, .articles .sub .blog--small__logo time, .articles .sub .blog--small__logo a {
   text-align: center;
   margin: 0 auto;
 }
@@ -534,6 +543,15 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-align: center;
+}
+
+.hero--icon {
+  background-image: url("../img/hero__menu__icon.png");
+  background-size: cover;
+  width: 69px;
+  height: 69px;
+  padding: 0;
+  display: block;
 }
 
 .moving__hero__container {
@@ -675,7 +693,7 @@ body {
   text-transform: uppercase;
 }
 
-.article__top .blog__credits .blog__credits__text p {
+.article__top .blog__credits .blog__credits__text time {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #757575;
@@ -934,6 +952,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mymove__log-small, .courtney--logo, .sarah--logo, .jack--logo, .courtney--logo {
+  height: 36px;
+  width: 36px;
+  background-size: 100%;
+  background-repeat: none;
+  padding-top: 36px;
+}
+
+.mymove__log-small {
+  background-image: url("../img/blogmymovelogo.svg");
+}
+
+.courtney--logo {
+  background-image: url("../img/courtneypriceicon.png");
+}
+
+.sarah--logo {
+  background-image: url("../img/sarahbrownlogo.png");
+}
+
+.jack--logo {
+  background-image: url("../img/jackfreyicon.png");
+}
+
+.courtney--logo {
+  background-image: url("../img/courtneypriceicon.png");
+}
+
+figcaption {
+  margin: 1em 0;
 }
 
 .footer {

@@ -12,14 +12,12 @@
 </head>
 
 <body>
-    <header class="hero__container" role="banner">
-
-
-        <nav class="hero__nav" role="navigation">
+    <header class="hero__container" >
+        <nav class="hero__nav" >
             <div class="hero__nav--icon">
                 <a href="#"><img src="assets/img/hero__logo.svg" alt="Hero image"></a>
             </div>
-            <div class="topnav" role="navigation">
+            <div class="topnav" >
                 <!---TOP NAV-->
                 <ul class="hero__nav__items">
                     <li><a href="#">how it works</a></li>
@@ -29,19 +27,19 @@
                     <li><a href="#">support</a></li>
                 </ul>
                 <div class="hero__nav__hamburger">
-                    <a href="#"><img src="assets/img/hero__menu__icon.png" alt="Navigation Icon"></a>
+                        <a href="#" class="hero--icon" aria-label="Hero Icon"></a>
                 </div>
             </div>
         </nav>
         <div class="hero__text__container">
             <p class="hero__text--yellow">moving resources</p>
-            <h1 class="hero__text--big">Master your move. We're here to help.</h1>
+            <p class="hero__text--big">Master your move. We're here to help.</p>
             <p class="hero__text--small">A lot of research goes into planning a move. But don't sweat it–we've done the heavy lifting.</p>
         </div>
     </header>
 
     <!--MAIN PAGE NAV-->
-    <ul class="blog__nav__items" role="navigation">
+    <ul class="blog__nav__items" >
         <li class="blog__nav__active"><a href="#">all</a></li>
         <li><a href="#">utilities</a></li>
         <li><a href="#">guides</a></li>
@@ -52,67 +50,49 @@
         <li><a href="#">outdoor</a></li>
         <li class="blog__nav__btn--purple"><a href="#">contact us</a></li>
     </ul>
-    <main class="main" role="main">
-
+    <main class="main" >
         <section class="main__blog" title="Deciding Whether or Not to Hire Movers">
-
             <div class="main__blog--text">
                 <h2 class="main__blog__header"><a href="articles.html" class="main__blog__link">Deciding Whether or Not to Hire Movers </a></h2>
-                <a href="#" class="main__blog__logo--small">
-                    <p>moving</p>
-                </a>
+                <a href="#" class="main__blog__logo--small">moving</a>
                 <p class="main__blog--small">Moving to a new state, city, or even just across town to a new neighborhood may seem overwhelming. Though
                     it may be a hassle, it’s an indisputable part of life – especially for young people in the years immediately
                     post-graduation…
                 </p>
                 <div class="main__blog--divider"></div>
-
-                <figure class="main__blog__credits">
-                    <img src="assets/img/blogmymovelogo.svg" alt="MyMove logo.">
+                <div class="main__blog__credits">
+                    <div class="mymove__log-small"></div>
                     <div class="main__blog__credits__text">
-                        <figcaption class="credits__author">by mymove</figcaption>
-                        <p>
-                            <time datetime="2017-08-28">August 28 2017</time>
-                        </p>
+                        <p class="credits__author">by mymove</p>
+                        <time datetime="2017-08-28">August 28 2017</time>
                     </div>
-                </figure>
-
+                </div>
             </div>
-
             <img src="assets/img/blogbigpicture.png" alt="Picture of husband and wife." class="main__blog__image">
 
         </section>
-
         <div class="articles">
-            <section class="sub" title="State-By-State Guide to Moving with Pets">
-                <div class="sub__topcontent">
+            <article class="sub" title="State-By-State Guide to Moving with Pets">
+                <figure class="sub__topcontent">
                     <h2 class="sub__text--big">State-By-State Guide to Moving with Pets</h2>
                     <img src="assets/img/2blogpost.png" alt="Picture of a dog.">
-                    <p class="sub__text--small">Dogs: CVI required. Must show official vaccination against rabies, vaccination certificates and rabies
-                        tags. Puppies younger than 3 months…</p>
-                    <a href="#" class="blog--small__logo">
-                        <p>moving</p>
-                    </a>
-
-
-                </div>
+                    <figcaption class="sub__text--small">Dogs: CVI required. Must show official vaccination against rabies, vaccination certificates and rabies
+                        tags. Puppies younger than 3 months…</figcaption>
+                    <a href="#" class="blog--small__logo">moving</a>
+                </figure>
 
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/blogmymovelogo.svg" alt="MyMove logo.">
+                    <div class="blog__credits">
+                        <div class="mymove__log-small"></div>
                         <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by mymove</figcaption>
-                            <p>
-                                <time datetime="2017-08-25">August 25, 2017</time>
-                            </p>
+                            <p class="blog__credits__author">by mymove</p>
+                            <time datetime="2017-08-25">August 25, 2017</time>
                         </div>
-                    </figure>
-
-
+                    </div>
                 </div>
 
-            </section>
-            <section class="sub" title="Biggest Packing Mistakes from Moving Experts">
+            </article>
+            <article class="sub" title="Biggest Packing Mistakes from Moving Experts">
                 <div class="sub__topcontent">
                     <h2 class="sub__text--big">Biggest Packing Mistakes from Moving Experts</h2>
                     <img src="assets/img/3blogpost.png" alt="Diagram of packing mistakes.">
@@ -122,19 +102,16 @@
                     </a>
                 </div>
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/blogmymovelogo.svg" alt="MyMove logo.">
-                        <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by mymove</figcaption>
-                            <p>
+                        <div class="blog__credits">
+                            <div class="mymove__log-small"></div>
+                            <div class="blog__credits__text">
+                                <p class="blog__credits__author">by mymove</p>
                                 <time datetime="2017-08-20">August 20, 2017</time>
-                            </p>
+                            </div>
                         </div>
-                    </figure>
-                </div>
-
-            </section>
-            <section class="sub" title="Pre-Move Checklist">
+                    </div>
+            </article>
+            <article class="sub" title="Pre-Move Checklist">
                 <div class="sub__topcontent">
                     <h2 class="sub__text--big">Pre-Move Checklist</h2>
                     <img src="assets/img/1blogpost.png" alt="Picture of a dog.">
@@ -146,23 +123,17 @@
 
 
                 </div>
-
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/blogmymovelogo.svg" alt="MyMove logo.">
-                        <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by mymove</figcaption>
-                            <p>
-                                <time datetime="2017-08-25">August 14, 2017</time>
-                            </p>
+                        <div class="blog__credits">
+                            <div class="mymove__log-small"></div>
+                            <div class="blog__credits__text">
+                                <p class="blog__credits__author">by mymove</p>
+                                <time datetime="2017-08-14">August 14, 2017</time>
+                            </div>
                         </div>
-                    </figure>
-
-
-                </div>
-
-            </section>
-            <section class="sub" title="Moving a Smart-Enabled Home: What Technology Should Stay Behind? ">
+                    </div>
+            </article>
+            <article class="sub" title="Moving a Smart-Enabled Home: What Technology Should Stay Behind? ">
                 <div class="sub__topcontent">
                     <h2 class="sub__text--big">Moving a Smart-Enabled Home: What Technology Should Stay Behind? </h2>
                     <img src="assets/img/4blogpost.png" alt="Picture of a dog.">
@@ -173,76 +144,54 @@
 
 
                 </div>
-
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/sarahbrownlogo.png" alt="Sarah Brown">
-                        <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by Sarah Brown</figcaption>
-                            <p>
-                                <time datetime="2017-08-25">August 11, 2017</time>
-                            </p>
+                        <div class="blog__credits">
+                            <div class="sarah--logo"></div>
+                            <div class="blog__credits__text">
+                                <p class="blog__credits__author">by Sarah Smith</p>
+                                <time datetime="2017-08-11">August 11, 2017</time>
+                            </div>
                         </div>
-                    </figure>
-
-
-                </div>
-
-            </section>
-            <section class="sub" title="Should I Move in with My Boyfriend or Girlfriend?">
-                <div class="sub__topcontent">
+                    </div>
+            </article>
+            <article class="sub" title="Should I Move in with My Boyfriend or Girlfriend?">
+                <figure class="sub__topcontent">
                     <h2 class="sub__text--big">Should I Move in with My Boyfriend or Girlfriend? </h2>
                     <img src="assets/img/5blogpost.png" alt="Picture of a dog.">
-                    <p class="sub__text--small">Should you move in with your significant other? Wow. That’s a big question – and it doesn’t…</p>
-                    <a href="#" class="blog--small__logo">
-                        <p>moving</p>
-                    </a>
-
-
-                </div>
+                    <figcaption class="sub__text--small">Should you move in with your significant other? Wow. That’s a big question – and it doesn’t…</figcaption>
+                    <a href="#" class="blog--small__logo">moving</a>
+                </figure>
 
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/courtneypriceicon.png" alt="Courtney Price">
-                        <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by Courtney Price Davis </figcaption>
-                            <p>
-                                <time datetime="2017-08-25">August 20, 2017</time>
-                            </p>
+                        <div class="blog__credits">
+                            <div class="jack--logo"></div>
+                            <div class="blog__credits__text">
+                                <p class="blog__credits__author">by Courtney Price Davis</p>
+                                <time datetime="2017-08-20">August 20, 2017</time>
+                            </div>
                         </div>
-                    </figure>
-
                 </div>
-
-            </section>
-            <section class="sub" title="A Guide to Small Apartments, Compact Living, and Minimalism">
-                <div class="sub__topcontent">
-
+            </article>
+            <article class="sub" title="A Guide to Small Apartments, Compact Living, and Minimalism">
+                <figure class="sub__topcontent">
                     <h2 class="sub__text--big">A Guide to Small Apartments, Compact Living, and Minimalism</h2>
                     <img src="assets/img/6blogpost.png" alt="Picture of a dog.">
-                    <p class="sub__text--small">Today’s world allows people to travel, work, and make a living simultaneously…</p>
+                    <figcaption class="sub__text--small">Today’s world allows people to travel, work, and make a living simultaneously…</figcaption>
                     <a href="#" class="blog--small__logo">
                         <p>moving</p>
                     </a>
-
-
-                </div>
-
+                </figure>
                 <div class="sub__bottomcontent">
-                    <figure class="blog__credits">
-                        <img src="assets/img/jackfreyicon.png" alt="Courtney Price">
-                        <div class="blog__credits__text">
-                            <figcaption class="blog__credits__author">by Jack Frey</figcaption>
-                            <p>
-                                <time datetime="2017-08-25">August 14, 2017</time>
-                            </p>
+                        <div class="blog__credits">
+                            <div class="jack--logo"></div>
+                            <div class="blog__credits__text">
+                                <p class="blog__credits__author">by Jack Frey</p>
+                                <time datetime="2017-08-11">August 14, 2017</time>
+                            </div>
                         </div>
-                    </figure>
-
-
                 </div>
 
-            </section>
+            </article>
             <div class="morearticles">
                 <div class="morearticles__break"></div>
                 <div class="morearticles__link">
@@ -256,74 +205,40 @@
 
 
     </main>
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" >
 
-        <ul class="footer__nav--left__items" role="navigation">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="#">How It Works
-                </a>
-            </li>
-            <li>
-                <a href="#">Partner With Us
-                </a>
-            </li>
-            <li>
-                <a href="#">About Us
-                </a>
-            </li>
-            <li>
-                <a href="#">Support</a>
-            </li>
-        </ul>
-        <ul class="footer__nav--bottom" role="navigation">
-            <li>
-                <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#">Terms and Conditions </a>
-            </li>
-            <li>
-                <a href="#">Advertiser Privacy Policies </a>
-            </li>
-            <li>
-                <a href="#">ADA Notice</a>
-            </li>
-        </ul>
-        <div class="footer__nav--right__logos" role="navigation">
-            <div>
-                <a href="https://mymove.com/">
-                    <img src="assets/img/mymovesmallfooter.png" alt="MyMove Logo">
-                </a>
-            </div>
-            <ul role="navigation">
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="assets/img/smalllinkedin.png" alt="Logo for LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com">
-                        <img src="assets/img/smallfacebook.png" alt="Logo for Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com">
-                        <img src="assets/img/smallyoutube.png" alt="Logo for YouTube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com">
-                        <img src="assets/img/smalltwitter.png" alt="Logo for Twitter">
-                    </a>
-                </li>
-
+            <ul class="footer__nav--left__items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
-        </div>
+            <ul class="footer__nav--bottom">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions </a></li>
+                <li><a href="#">Advertiser Privacy Policies </a></li>
+                <li><a href="#">ADA Notice</a></li>
+            </ul>
+            <div class="footer__nav--right__logos">
+                <div>
+                    <a href="https://mymove.com/">
+                        <img src="assets/img/mymovesmallfooter.png" alt="MyMove Logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="https://www.linkedin.com"><img src="assets/img/smalllinkedin.png" alt="Logo for LinkedIn"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com"><img src="assets/img/smallfacebook.png" alt="Logo for Facebook"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com"><img src="assets/img/smallyoutube.png" alt="Logo for YouTube"></a>
+                    </li>
+                    <li><a href="https://www.twitter.com"><img src="assets/img/smalltwitter.png" alt="Logo for Twitter"></a>
+                    </li>
 
-    </footer>
+                </ul>
+            </div>
+        </footer>
 </body>
 
 </html>
